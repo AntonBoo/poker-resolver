@@ -3,10 +3,12 @@ package app;
 import static model.COULEUR.CARREAUX;
 import static model.COULEUR.COEUR;
 import static model.COULEUR.PIQUE;
-import static model.COULEUR.*;
-import static model.HAUTEUR.DEUX;
+import static model.COULEUR.TREFLE;
+import static model.HAUTEUR.AS;
+import static model.HAUTEUR.DAME;
 import static model.HAUTEUR.DIX;
-import static model.HAUTEUR.*;
+import static model.HAUTEUR.ROI;
+import static model.HAUTEUR.VALET;
 
 import java.util.Arrays;
 
@@ -20,7 +22,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		
 		Joueur j1 = new Joueur(new Card[] {Card.create(DIX, CARREAUX), Card.create(DIX, COEUR)});
-		Joueur j2 = new Joueur(new Card[] {Card.create(DEUX, TREFLE), Card.create(VALET, CARREAUX)});
+		Joueur j2 = new Joueur(new Card[] {Card.create(AS, TREFLE), Card.create(ROI, CARREAUX)});
 
 		Simulator simulator = new Simulator(j1, j2);
 		
